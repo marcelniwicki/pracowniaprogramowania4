@@ -1,4 +1,4 @@
-package pl.jkanclerz.productcatalog;
+package pl.mniwicki.productcatalog;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 

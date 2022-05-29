@@ -1,4 +1,4 @@
-package pl.jkanclerz.productcatalog;
+package pl.mniwicki.productcatalog;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,7 +11,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-public class SqlProductStorageTest {
+public class SQLProductStorageTest {
 
     @Autowired
     JdbcTemplate jdbcTemplate;

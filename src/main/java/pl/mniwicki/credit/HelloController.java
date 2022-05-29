@@ -1,4 +1,4 @@
-package pl.jkanclerz.credit;
+package pl.mniwicki.credit;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
