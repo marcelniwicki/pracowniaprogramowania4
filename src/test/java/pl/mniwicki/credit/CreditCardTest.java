@@ -1,6 +1,6 @@
-package pl.jkanclerz.credit;
+package pl.mniwicki.credit;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
 import java.math.BigDecimal;
 
 public class CreditCardTest {

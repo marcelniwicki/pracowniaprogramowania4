@@ -1,4 +1,4 @@
-package pl.jkanclerz.credit;
+package pl.mniwicki.credit;
 
 import java.math.BigDecimal;
 

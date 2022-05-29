@@ -1,15 +1,18 @@
-package pl.jkanclerz;
+package pl.mniwicki;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import pl.jkanclerz.credit.Greeter;
-import pl.jkanclerz.productcatalog.ListProductStorage;
-import pl.jkanclerz.productcatalog.MapProductStorage;
-import pl.jkanclerz.productcatalog.ProductCatalog;
-import pl.jkanclerz.productcatalog.ProductStorage;
+import pl.mniwicki.credit.Greeter;
+import pl.mniwicki.productcatalog.MapProductStorage;
+import pl.mniwicki.productcatalog.ProductCatalog;
+import pl.mniwicki.productcatalog.ProductStorage;
+import pl.mniwicki.sales.AvailableProducts;
+import pl.mniwicki.sales.CartStorage;
+import pl.mniwicki.sales.Sales;
 
 import java.math.BigDecimal;
+import java.util.Collections;
 
 @SpringBootApplication
 public class App {
@@ -44,5 +47,10 @@ public class App {
         productCatalog.publish(productId2);
 
         return productCatalog;
+    }
+
+    @Bean
+    Sales createSales() {
+        return new Sales(new AvailableProducts(Collections.emptyList()), new CartStorage());
     }
 }
